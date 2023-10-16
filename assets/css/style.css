@@ -304,10 +304,12 @@ header{
   #addteamform input {
     width: 70%;
     height: 40px;
+    padding-left:10px
   }
   #addteamform select {
     width: 70%;
     height: 40px;
+    padding-left: 10px;
   }
   
   #addteamform button {
