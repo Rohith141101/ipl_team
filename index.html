@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header id="top-bar">
+      <div id="top-right">
+        <img src="./assets/images/ipl.png" alt="logo here" id="ipl-logo" />
+        <a href="index.html">
+          <button id="home-button" class="add-button-home">Home</button></a
+        >
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            Add Player
+          </button>
+      </div>
+      <div id="top-left">
+        <div class="search-box">
+          <a href="" target="_blank" hidden></a>
+          <input type="text" placeholder="Enter the team name" />
+          <div class="autocom-box"></div>
+          <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide">
+          <img src="./assets/images/csk.jpg" alt="" />
+        </div>
+        <div class="slide first">
+          <img src="./assets/images/mi.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/images/gujrat.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/images/rcb.jpg" alt="" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <h1 id="title-name">Indian Premier League</h1>
+    <div id="first-main">
+      <div id="container_teams"></div>
+    </div>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </body>
+</html>

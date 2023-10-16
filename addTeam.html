@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Team</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="top-bar">
+      <div id="top-right">
+        <img src="./assets/images/ipl.png" alt="logo here" id="ipl-logo" />
+        <a href="index.html">
+          <button id="home-button" class="add-button-home" style="margin-left: 750px;">Home</button></a
+        >
+      </div>
+    </header>
+
+    <div id="add-team">
+      <h1 id="title4">Add a Team</h1>
+      <form id="addteamform">
+        <p>Team Name</p>
+        <input
+          id="inp1"
+          type="text"
+          name="teamName"
+          placeholder="Enter team name here.."
+          required
+        />
+        <p>Team logo Url</p>
+        <input
+          id="inp3"
+          type="text"
+          name="logoUrl"
+          placeholder="enter logo URL here.."
+          required
+        />
+        <p>Won count</p>
+        <input
+          id="inp4"
+          type="number"
+          name="wonCount"
+          maxlength="1"
+          placeholder="enter won count here.."
+          required
+        />
+
+        <button type="submit">Add team</button>
+      </form>
+    </div>
+    <script src="./assets/js/addTeam.js"></script>
+  </body>
+</html>
