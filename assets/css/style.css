@@ -40,9 +40,10 @@ header{
   cursor: pointer;
   font-size: 18px;
 }
-.search-box{
+#top-left{
   display: flex;
-  align-items: center;
+}
+.search-box{
   margin-right: 90px;
 } 
 .search-box input{
@@ -51,8 +52,27 @@ header{
   border-radius: 5px;
   font-size: 14px;
 }
+.autocom-box li{
+  position: absolute;
+  width: 200px;
+  margin-top: 5px;
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.search-box.active .autocom-box li{
+  display: block;
+  background-color: white;
+  box-shadow: 1px 1px 2px gray;
+}
+.autocom-box li:hover{
+  background-color: #efefef;
+}
 .icon{
-  margin-left: 10px;
+  position: relative;
+  right: 80px;
   color: white;
   font-size: 20px;
 }
